@@ -357,7 +357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!212 &10791011
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &11618340
@@ -5906,7 +5906,7 @@ Transform:
   m_LocalScale: {x: .571987152, y: 1, z: -1.42510581}
   m_Children: []
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!23 &85775443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6315,7 +6315,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ffd506f04f2ed1246b1c8b6c6be9443b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &88769479
@@ -9860,6 +9860,414 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &131769370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 131769371}
+  - 212: {fileID: 131769374}
+  - 65: {fileID: 131769373}
+  - 114: {fileID: 131769372}
+  m_Layer: 0
+  m_Name: Trolley (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &131769371
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131769370}
+  m_LocalRotation: {x: .64453125, y: .290825754, z: -.290825725, w: .644531131}
+  m_LocalPosition: {x: 1.13, y: .0998999998, z: 15.7799997}
+  m_LocalScale: {x: .408098519, y: .43540138, z: .500000119}
+  m_Children:
+  - {fileID: 389246239}
+  - {fileID: 1774110199}
+  m_Father: {fileID: 1961523594}
+  m_RootOrder: 0
+--- !u!114 &131769372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131769370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: 9754d4abda502c6458053d5ed8e4fc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Examine
+    startState: Default
+    states:
+    - name: Default
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 226.679688
+        y: 426.5
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Examining
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000001437572736f7201000000004578616d696e696e6701
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000c000000110000001a0000001a0000001a000000
+        paramByteDataSize: 0000000000000000010000000b0000000500000009000000000000000000000001000000
+    - name: Examine Mode
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 225
+        y: 479.5
+        width: 115
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MOUSE OVER
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000006000000
+        actionHashCodes: 71d53d18ec086d87
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001437572736f72010000000046494e495348454446494e49534845440100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000017000000170000001700000001000000140000001200000001000000
+        paramName:
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        - gameObject
+        - text
+        - everyFrame
+        paramDataPos: 000000000b00000010000000100000001800000020000000000000000000000021000000
+        paramByteDataSize: 0b0000000500000000000000080000000800000001000000000000000000000001000000
+    - name: Examine
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 231
+        y: 547.5
+        width: 104
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: MOUSE EXIT
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.StringAddNewLine
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000008000000
+        actionHashCodes: fe28a804ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: A broken trolley.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Something clawed through the metal casing.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Impressive.
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010000000001437572736f72010000000046494e495348454446494e495348454401
+        arrayParamSizes: 03000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c00000012000000120000001200000012000000140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - stringParts
+        - 
+        - 
+        - 
+        - storeResult
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 0000000000000000010000000200000003000000000000000400000000000000010000000c00000011000000110000001900000021000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000b0000000500000000000000080000000800000001000000
+    events:
+    - name: Examining
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE OVER
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE EXIT
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: String
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!65 &131769373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131769370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.84000087, y: 4.40000153, z: 4.47741365}
+  m_Center: {x: -.000320151536, y: .000282191002, z: -2.13871741}
+--- !u!212 &131769374
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131769370}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 09dc522300a673f4f88521b1a0726cb8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 36f7433b058c40a4ead1a824cb838d88, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &133337699
 GameObject:
   m_ObjectHideFlags: 0
@@ -14589,6 +14997,66 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
+--- !u!1 &193819234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 193819235}
+  - 108: {fileID: 193819236}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193819235
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193819234}
+  m_LocalRotation: {x: .5, y: .5, z: -.500000119, w: .49999994}
+  m_LocalPosition: {x: .0299999993, y: -1.47000003, z: .0399999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 671699002}
+  m_RootOrder: 0
+--- !u!108 &193819236
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 193819234}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 0
+  m_Color: {r: .514705896, g: .859432042, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 12.0299997
+  m_SpotAngle: 68
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &194504835
 GameObject:
   m_ObjectHideFlags: 0
@@ -14616,7 +15084,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 6
+  m_RootOrder: 9
 --- !u!212 &194504837
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14640,7 +15108,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &195953669
@@ -20552,7 +21020,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 8
+  m_RootOrder: 11
 --- !u!212 &298177121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20576,7 +21044,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &298289157
@@ -21657,7 +22125,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 12
+  m_RootOrder: 15
 --- !u!212 &300310423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21681,7 +22149,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &300712866
@@ -21773,7 +22241,7 @@ Transform:
   m_LocalScale: {x: 6.12562752, y: 1, z: 1.55151308}
   m_Children: []
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!23 &308820282
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26378,7 +26846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 4
+  m_RootOrder: 7
 --- !u!212 &371209717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26402,7 +26870,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &374848027
@@ -26739,6 +27207,66 @@ Transform:
   - {fileID: 1756096221}
   m_Father: {fileID: 241664362}
   m_RootOrder: 6
+--- !u!1 &389246238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 389246239}
+  - 108: {fileID: 389246240}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &389246239
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389246238}
+  m_LocalRotation: {x: .5, y: .5, z: -.500000119, w: .49999994}
+  m_LocalPosition: {x: .0299999993, y: -1.47000003, z: .0399999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 131769371}
+  m_RootOrder: 0
+--- !u!108 &389246240
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389246238}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 0
+  m_Color: {r: .514705896, g: .859432042, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 12.0299997
+  m_SpotAngle: 68
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &389450924
 GameObject:
   m_ObjectHideFlags: 0
@@ -28027,6 +28555,66 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 650c19f51c12c144b91eb02db7bdbca7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &408179603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 408179604}
+  - 108: {fileID: 408179605}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408179604
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408179603}
+  m_LocalRotation: {x: .5, y: .5, z: -.500000119, w: .49999994}
+  m_LocalPosition: {x: .0299999993, y: -1.47000003, z: .0399999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2050903158}
+  m_RootOrder: 0
+--- !u!108 &408179605
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408179603}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 0
+  m_Color: {r: .514705896, g: .859432042, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 12.0299997
+  m_SpotAngle: 68
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &410057431
 GameObject:
   m_ObjectHideFlags: 0
@@ -31833,7 +32421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 9
+  m_RootOrder: 12
 --- !u!212 &491836939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31857,7 +32445,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &494259939
@@ -32481,7 +33069,7 @@ Transform:
   m_LocalScale: {x: .571987152, y: 1.00000024, z: -1.42510581}
   m_Children: []
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!23 &509610335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34185,6 +34773,83 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 528258560}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &529310111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 150678, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 529310112}
+  - 33: {fileID: 529310115}
+  - 65: {fileID: 529310114}
+  - 23: {fileID: 529310113}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529310112
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425598, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529310111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .360000014, z: -.129999995}
+  m_LocalScale: {x: .34552449, y: 1, z: 2.05153155}
+  m_Children:
+  - {fileID: 586071943}
+  m_Father: {fileID: 761690846}
+  m_RootOrder: 0
+--- !u!23 &529310113
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2318738, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529310111}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 8031f21c4daece34a91801b06bfb6f0e, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &529310114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6537260, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529310111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &529310115
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3358088, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529310111}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &533722992
 GameObject:
@@ -38618,6 +39283,67 @@ Transform:
   - {fileID: 270652779}
   m_Father: {fileID: 1145317690}
   m_RootOrder: 6
+--- !u!1 &586071942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 156458, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 586071943}
+  - 108: {fileID: 586071944}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &586071943
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 403696, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586071942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0500000007, y: -.159999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529310112}
+  m_RootOrder: 0
+--- !u!108 &586071944
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10895516, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586071942}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Intensity: 6.23999977
+  m_Range: .620000005
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &588562038
 GameObject:
   m_ObjectHideFlags: 0
@@ -45512,6 +46238,413 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 669843998}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &671699001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 671699002}
+  - 212: {fileID: 671699005}
+  - 65: {fileID: 671699004}
+  - 114: {fileID: 671699003}
+  m_Layer: 0
+  m_Name: Trolley (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &671699002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671699001}
+  m_LocalRotation: {x: -.155568138, y: .689781725, z: -.689781368, w: -.155568048}
+  m_LocalPosition: {x: -1.50800002, y: .0998999998, z: -7.6500001}
+  m_LocalScale: {x: .500000119, y: .500000238, z: .500000119}
+  m_Children:
+  - {fileID: 193819235}
+  m_Father: {fileID: 1961523594}
+  m_RootOrder: 1
+--- !u!114 &671699003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671699001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: 9754d4abda502c6458053d5ed8e4fc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Examine
+    startState: Default
+    states:
+    - name: Default
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 226.679688
+        y: 426.5
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Examining
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000001437572736f7201000000004578616d696e696e6701
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000c000000110000001a0000001a0000001a000000
+        paramByteDataSize: 0000000000000000010000000b0000000500000009000000000000000000000001000000
+    - name: Examine Mode
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 225
+        y: 479.5
+        width: 115
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MOUSE OVER
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000006000000
+        actionHashCodes: 71d53d18ec086d87
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001437572736f72010000000046494e495348454446494e49534845440100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000017000000170000001700000001000000140000001200000001000000
+        paramName:
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        - gameObject
+        - text
+        - everyFrame
+        paramDataPos: 000000000b00000010000000100000001800000020000000000000000000000021000000
+        paramByteDataSize: 0b0000000500000000000000080000000800000001000000000000000000000001000000
+    - name: Examine
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 231
+        y: 547.5
+        width: 104
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: MOUSE EXIT
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.StringAddNewLine
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000008000000
+        actionHashCodes: fe28a804ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: A trolley.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Both suitcases are locked shut
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Preventing me from looking at the contents.
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010000000001437572736f72010000000046494e495348454446494e495348454401
+        arrayParamSizes: 03000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c00000012000000120000001200000012000000140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - stringParts
+        - 
+        - 
+        - 
+        - storeResult
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 0000000000000000010000000200000003000000000000000400000000000000010000000c00000011000000110000001900000021000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000b0000000500000000000000080000000800000001000000
+    events:
+    - name: Examining
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE OVER
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE EXIT
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: String
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!65 &671699004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671699001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.84000087, y: 4.40000153, z: 4.47741365}
+  m_Center: {x: -.000320151536, y: .000282191002, z: -2.13871741}
+--- !u!212 &671699005
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671699001}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 09dc522300a673f4f88521b1a0726cb8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 87984ecbab2dde14dad359b3cb96da06, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &684687842
 GameObject:
   m_ObjectHideFlags: 0
@@ -52668,6 +53801,516 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760188293}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &761690845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 189436, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 761690846}
+  - 33: {fileID: 761690849}
+  - 65: {fileID: 761690848}
+  - 114: {fileID: 761690847}
+  m_Layer: 0
+  m_Name: Doorway
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &761690846
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 423280, guid: 0fffcfa59cf565f499d2c0a95cc12554, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761690845}
+  m_LocalRotation: {x: 0, y: .70710659, z: 0, w: -.707106948}
+  m_LocalPosition: {x: -19.0559998, y: 0, z: -18.5}
+  m_LocalScale: {x: 1, y: 1, z: 3.57727933}
+  m_Children:
+  - {fileID: 529310112}
+  m_Father: {fileID: 1015636550}
+  m_RootOrder: 0
+--- !u!114 &761690847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11443782, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761690845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Accessible Door
+    startState: Initialize
+    states:
+    - name: Door Closed
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 202
+        y: 167
+        width: 127
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: TRIGGER ENTER
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Opening Door
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Initialize
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 212
+        y: 109.992188
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Door Closed
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetPosition
+        - HutongGames.PlayMaker.Actions.SetVector3Value
+        - HutongGames.PlayMaker.Actions.Vector3Add
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 00000101
+        actionStartIndex: 00000000070000000a0000000e000000
+        actionHashCodes: a290608e610827fd0afe47cbb4797e4a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 529310111}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1248002193}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000000000000000000000001446f6f7220436c6f73656420506f736974696f6e000000000100000000010000000001000000000000000000000000000000000001446f6f72204f70656e20506f736974696f6e00000000000000000000000001446f6f7220436c6f73656420506f736974696f6e0000000000000000000000000001446f6f72204f70656e20506f736974696f6e0000c0400000000000000000000000000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f00000007000000010000001c0000001c000000010000001c0000001c00000001000000010000001400000011000000110000000100000001000000
+        paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - vector3Variable
+        - vector3Value
+        - everyFrame
+        - vector3Variable
+        - addVector
+        - everyFrame
+        - perSecond
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 000000000000000021000000260000002b00000030000000340000003500000054000000750000007600000095000000a2000000a300000001000000a4000000a6000000a8000000a9000000
+        paramByteDataSize: 000000002100000005000000050000000500000004000000010000001f00000021000000010000001f0000000d00000001000000010000000000000002000000020000000100000001000000
+    - name: Opening Door
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 351
+        y: 216
+        width: 111
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Door Open
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlaySound
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010100
+        actionIsOpen: 010101
+        actionStartIndex: 00000000040000000b000000
+        actionHashCodes: bdddbb00b509599a3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 529310111}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 529310111}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: 57ed16bf9fcfcad498a3a3292fc9e69a, type: 3}
+        fsmVarParams: []
+        byteData: 000000000000000000000000010000803f0000000000000000000000000001446f6f72204f70656e20506f736974696f6e00000000704100cdcccc3d000000003f0046494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c000000180000000f00000014000000130000001c000000110000000f0000000f000000170000000f0000001700000001000000
+        paramName:
+        - gameObject
+        - position
+        - clip
+        - volume
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000000000000d0000000100000000000000120000003100000033000000380000003d0000003d000000420000004a000000
+        paramByteDataSize: 000000000d000000000000000500000000000000000000001f00000002000000050000000500000000000000050000000800000001000000
+    - name: Door Open
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 212
+        y: 285
+        width: 115
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: TRIGGER EXIT
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Closing Door
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Closing Door
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 62
+        y: 213.289062
+        width: 104
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Door Closed
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.PlaySound
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010100
+        actionIsOpen: 010101
+        actionStartIndex: 00000000040000000b000000
+        actionHashCodes: bdddbb00b509599a3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 529310111}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 8300000, guid: d1d2d8b3d6d6cd14c9314983b51d2c3b, type: 3}
+        fsmVarParams: []
+        byteData: 000000000000000000000000010000803f0000000000000000000000000001446f6f7220436c6f73656420506f736974696f6e00000000704100cdcccc3d000000003f0046494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c000000180000000f00000014000000130000001c000000110000000f0000000f000000170000000f0000001700000001000000
+        paramName:
+        - gameObject
+        - position
+        - clip
+        - volume
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 0000000000000000000000000d00000001000000000000001200000033000000350000003a0000003f0000003f000000440000004c000000
+        paramByteDataSize: 000000000d000000000000000500000000000000000000002100000002000000050000000500000000000000050000000800000001000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: TRIGGER ENTER
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: TRIGGER EXIT
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Distance
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Door Closed Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      - useVariable: 1
+        name: Door Open Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!65 &761690848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6532398, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761690845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.77007163, y: 1, z: 2.06413317}
+  m_Center: {x: -.0142262168, y: 0, z: -.106450446}
+--- !u!33 &761690849
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3329594, guid: 0fffcfa59cf565f499d2c0a95cc12554,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761690845}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &763096864
 GameObject:
   m_ObjectHideFlags: 0
@@ -53361,7 +55004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 5
+  m_RootOrder: 8
 --- !u!212 &796715128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53385,7 +55028,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &805162076
@@ -58180,7 +59823,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: de092974e15c88a40a0c47349ff42323, type: 3}
   m_Color: {r: .742647052, g: .311256468, b: .311256468, a: 1}
 --- !u!1 &858227350
@@ -59245,7 +60888,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!212 &881296144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59269,7 +60912,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &883239711
@@ -60654,7 +62297,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -65586,6 +67228,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 761690846}
   - {fileID: 308820281}
   - {fileID: 509610334}
   - {fileID: 2133047042}
@@ -69756,7 +71399,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 7
+  m_RootOrder: 10
 --- !u!212 &1078703176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69780,7 +71423,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &1083728130
@@ -83189,7 +84832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 2
+  m_RootOrder: 5
 --- !u!212 &1266161696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -83213,7 +84856,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &1269277819
@@ -93455,7 +95098,7 @@ Transform:
   m_LocalScale: {x: 7.50859308, y: 1.00000036, z: -5.00030327}
   m_Children: []
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!23 &1399240967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -102654,7 +104297,7 @@ Transform:
   m_LocalScale: {x: .728700101, y: .728700101, z: .728700101}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 13
+  m_RootOrder: 16
 --- !u!135 &1503607701
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -110672,7 +112315,7 @@ Transform:
   - {fileID: 294141219}
   - {fileID: 1492383811}
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1612042281
 GameObject:
   m_ObjectHideFlags: 0
@@ -114057,7 +115700,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ffd506f04f2ed1246b1c8b6c6be9443b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1656375944
@@ -115222,7 +116865,7 @@ Transform:
   m_LocalScale: {x: 7.42806816, y: .468339413, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 11
+  m_RootOrder: 14
 --- !u!212 &1668437324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115246,7 +116889,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &1668679706
@@ -122832,6 +124475,60 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &1774110198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1774110199}
+  - 212: {fileID: 1774110200}
+  m_Layer: 0
+  m_Name: Parts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1774110199
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774110198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.25, y: -3.03999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 131769371}
+  m_RootOrder: 1
+--- !u!212 &1774110200
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774110198}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 09dc522300a673f4f88521b1a0726cb8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 82dce91dae49cb841a707c49edc36ff0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1774734803
 GameObject:
   m_ObjectHideFlags: 0
@@ -127155,7 +128852,7 @@ Transform:
   m_LocalScale: {x: 2.13648224, y: .468339443, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 10
+  m_RootOrder: 13
 --- !u!212 &1819870923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127179,7 +128876,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &1822471505
@@ -132960,7 +134657,7 @@ Transform:
   - {fileID: 742819816}
   - {fileID: 1067210724}
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &1941624669
 GameObject:
   m_ObjectHideFlags: 0
@@ -133987,6 +135684,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 9.99999975e-05, z: 6.44999981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 131769371}
+  - {fileID: 671699002}
+  - {fileID: 2050903158}
   - {fileID: 881296143}
   - {fileID: 10791010}
   - {fileID: 1266161695}
@@ -140141,7 +141841,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045363810}
   m_LocalRotation: {x: 0, y: .553133368, z: 0, w: .83309269}
-  m_LocalPosition: {x: -1.26800001, y: .850000143, z: .5}
+  m_LocalPosition: {x: 65.2300034, y: .850000143, z: 119.900002}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 1954501785}
@@ -141466,6 +143166,406 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2047227614}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2050903157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2050903158}
+  - 212: {fileID: 2050903161}
+  - 65: {fileID: 2050903160}
+  - 114: {fileID: 2050903159}
+  m_Layer: 0
+  m_Name: Trolley (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2050903158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050903157}
+  m_LocalRotation: {x: -.592545748, y: .385862499, z: -.385862172, w: -.592545509}
+  m_LocalPosition: {x: 13.5640736, y: .0998999998, z: -8.48169327}
+  m_LocalScale: {x: .347173661, y: .405366451, z: .5}
+  m_Children:
+  - {fileID: 408179604}
+  m_Father: {fileID: 1961523594}
+  m_RootOrder: 2
+--- !u!114 &2050903159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050903157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: 9754d4abda502c6458053d5ed8e4fc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Examine
+    startState: Default
+    states:
+    - name: Default
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 226.679688
+        y: 426.5
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Examining
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000001437572736f7201000000004578616d696e696e6701
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000c000000110000001a0000001a0000001a000000
+        paramByteDataSize: 0000000000000000010000000b0000000500000009000000000000000000000001000000
+    - name: Examine Mode
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 225
+        y: 479.5
+        width: 115
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: MOUSE OVER
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntCompare
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000006000000
+        actionHashCodes: 71d53d18ec086d87
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000001437572736f72010000000046494e495348454446494e49534845440100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000017000000170000001700000001000000140000001200000001000000
+        paramName:
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        - gameObject
+        - text
+        - everyFrame
+        paramDataPos: 000000000b00000010000000100000001800000020000000000000000000000021000000
+        paramByteDataSize: 0b0000000500000000000000080000000800000001000000000000000000000001000000
+    - name: Examine
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 231
+        y: 547.5
+        width: 104
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: MOUSE EXIT
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Examine Mode
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Default
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.StringAddNewLine
+        - HutongGames.PlayMaker.Actions.SetGUIText
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000400000007000000
+        actionHashCodes: fe28a804ec086d8771d53d18
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: GUI Examine
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: A trolley.
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: The light is still working.
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: String
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010000000001437572736f72010000000046494e495348454446494e495348454401
+        arrayParamSizes: 02000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000001200000012000000140000001200000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - stringParts
+        - 
+        - 
+        - storeResult
+        - gameObject
+        - text
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000300000000000000010000000c00000011000000110000001900000021000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000b0000000500000000000000080000000800000001000000
+    events:
+    - name: Examining
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE OVER
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: MOUSE EXIT
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: String
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!65 &2050903160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050903157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.84000087, y: 4.40000153, z: 4.47741365}
+  m_Center: {x: -.000320151536, y: .000282191002, z: -2.13871741}
+--- !u!212 &2050903161
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050903157}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 09dc522300a673f4f88521b1a0726cb8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 48bfee9a1dae0504e8644d7914829319, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2051119274
 GameObject:
   m_ObjectHideFlags: 0
@@ -144059,7 +146159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961523594}
-  m_RootOrder: 3
+  m_RootOrder: 6
 --- !u!212 &2090792143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -144083,7 +146183,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: bdf0ec5a650e37f4aa6285e0bd635b9b, type: 3}
   m_Color: {r: .720588207, g: 0, b: 0, a: .409000009}
 --- !u!1 &2090972014
@@ -147093,7 +149193,7 @@ Transform:
   m_LocalScale: {x: .571987152, y: 1, z: -1.42510581}
   m_Children: []
   m_Father: {fileID: 1015636550}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!23 &2133047043
 MeshRenderer:
   m_ObjectHideFlags: 0
