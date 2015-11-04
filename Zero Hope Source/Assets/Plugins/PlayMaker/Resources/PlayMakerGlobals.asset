@@ -127,4 +127,6 @@ MonoBehaviour:
     objectVariables: []
     materialVariables: []
     textureVariables: []
-  events: []
+  events:
+  - Flashlight Toggled
+  - Lobby 1 Door Open
