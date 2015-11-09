@@ -25,7 +25,19 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: .0500000007
+    - useVariable: 1
+      name: Player Health
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 100
     intVariables:
+    - useVariable: 1
+      name: Battery Supplies
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     - useVariable: 1
       name: Cursor
       tooltip: 
@@ -95,6 +107,12 @@ MonoBehaviour:
       value: 0
     - useVariable: 1
       name: '[Key2] Keycard Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: '[Supplies] Battery'
       tooltip: 
       showInInspector: 0
       networkSync: 0
