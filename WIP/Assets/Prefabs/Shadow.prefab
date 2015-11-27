@@ -2085,7 +2085,6 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.EnableCollider
-        - HutongGames.PlayMaker.Actions.AudioStop
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
@@ -2094,24 +2093,15 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 0000000006000000070000000b0000000f000000
-        actionHashCodes: 7c2e273c62b382d9c3addc63c3addc63c3addc63
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000060000000a0000000e000000
+        actionHashCodes: 7c2e273cc3addc63c3addc63c3addc63
         unityObjectParams:
         - {fileID: 0}
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
         - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        - ownerOption: 1
           gameObject:
             useVariable: 0
             name: 
@@ -2175,7 +2165,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000050000000700000011000000110000001100000014000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000
+        paramDataType: 140000000500000007000000110000001100000011000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000
         paramName:
         - gameObject
         - component
@@ -2184,7 +2174,6 @@ MonoBehaviour:
         - inclChildren
         - allCollider
         - gameObject
-        - gameObject
         - fsmName
         - enable
         - resetOnExit
@@ -2196,8 +2185,8 @@ MonoBehaviour:
         - fsmName
         - enable
         - resetOnExit
-        paramDataPos: 0000000000000000000000000400000006000000080000000100000002000000000000000a0000000c00000003000000010000000e0000001000000004000000020000001200000014000000
-        paramByteDataSize: 00000000000000000400000002000000020000000200000000000000000000000000000002000000020000000000000000000000020000000200000000000000000000000200000002000000
+        paramDataPos: 00000000000000000000000004000000060000000800000001000000000000000a0000000c00000002000000010000000e0000001000000003000000020000001200000014000000
+        paramByteDataSize: 000000000000000004000000020000000200000002000000000000000000000002000000020000000000000000000000020000000200000000000000000000000200000002000000
     events:
     - name: FINISHED
       isSystemEvent: 1
