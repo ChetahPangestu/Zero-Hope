@@ -219,9 +219,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165856}
-  m_LocalRotation: {x: 0, y: .903548002, z: 0, w: -.428487092}
-  m_LocalPosition: {x: 55.4700012, y: -.730000019, z: -12.0600004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: .428486943, z: 0, w: .903548062}
+  m_LocalPosition: {x: -31.2028122, y: -.135857508, z: -17.6104488}
+  m_LocalScale: {x: .543430328, y: .54343003, z: .543430328}
   m_Children:
   - {fileID: 452414}
   m_Father: {fileID: 0}
@@ -314,8 +314,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.11000013, y: 1, z: 5.26999998}
-  m_Center: {x: .0799999982, y: 1.23000002, z: -.21082978}
+  m_Size: {x: 2.97000003, y: 1, z: 3.86417866}
+  m_Center: {x: 0, y: 1.23000002, z: 1.05017412}
 --- !u!95 &9517408
 Animator:
   serializedVersion: 3
@@ -1799,7 +1799,7 @@ MonoBehaviour:
           value: Aggro
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000000000000000000000000000000000001506f736974696f6e00000000404000cdcccc3d0046494e4953484544
+        byteData: 0000000000000000000000000000000000000000000000000000000001506f736974696f6e00000000c03f00cdcccc3d0046494e4953484544
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
