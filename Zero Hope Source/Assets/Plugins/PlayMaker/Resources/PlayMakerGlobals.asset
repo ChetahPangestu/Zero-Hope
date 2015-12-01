@@ -30,7 +30,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 100
+      value: 99
     intVariables:
     - useVariable: 1
       name: Battery Supplies
