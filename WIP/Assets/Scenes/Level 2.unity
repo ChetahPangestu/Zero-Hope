@@ -51252,6 +51252,7 @@ GameObject:
   - 114: {fileID: 1987340911}
   - 114: {fileID: 1987340910}
   - 114: {fileID: 1987340921}
+  - 114: {fileID: 1987340922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -52138,7 +52139,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 82
-        y: 100
+        y: 116
         width: 100
         height: 48
       isBreakpoint: 0
@@ -52167,15 +52168,17 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetKey
         - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.FloatAdd
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000003000000060000000a000000
-        actionHashCodes: 32ae2e9732ae2e973334d1723334d172
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000003000000060000000a0000000e000000
+        actionHashCodes: 32ae2e9732ae2e973334d1723334d17222e89522
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -52188,12 +52191,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 770000000001466f7277617264017300000000014261636b77617264010001466f7277617264466f72776172640100014261636b776172644261636b7761726401
+        byteData: 770000000001466f7277617264017300000000014261636b77617264010001466f7277617264466f72776172640100014261636b776172644261636b776172640100000000015374616d696e610000803f000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0700000011000000010000000700000011000000010000001100000017000000170000000100000011000000170000001700000001000000
+        paramDataType: 07000000110000000100000007000000110000000100000011000000170000001700000001000000110000001700000017000000010000000f0000000f0000000100000001000000
         paramName:
         - key
         - storeResult
@@ -52209,17 +52212,21 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 00000000040000000d0000000e000000120000001c0000001d000000260000002d0000002d0000002e000000380000004000000040000000
-        paramByteDataSize: 040000000900000001000000040000000a00000001000000090000000700000000000000010000000a000000080000000000000001000000
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        paramDataPos: 00000000040000000d0000000e000000120000001c0000001d000000260000002d0000002d0000002e000000380000004000000040000000410000004d0000005200000053000000
+        paramByteDataSize: 040000000900000001000000040000000a00000001000000090000000700000000000000010000000a0000000800000000000000010000000c000000050000000100000001000000
     - name: Move Forward
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 112
         width: 115
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -52232,17 +52239,29 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: Sprinting
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Stamina Check
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.MoveTowards
         - HutongGames.PlayMaker.Actions.GetKeyUp
+        - HutongGames.PlayMaker.Actions.GetKey
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: b509599a437581ed
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000070000000a0000000d000000
+        actionHashCodes: b509599a437581ed32ae2e973334d172
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -52269,12 +52288,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000000001000000004040000000803f007700000046494e49534845440001
+        byteData: 00000000000000000000000001000000004040000000803f007700000046494e49534845440001300100000001537072696e74010001537072696e74537072696e74696e6701
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c000000110000000f0000000f00000017000000070000001700000011000000
+        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000007000000170000001100000007000000110000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - targetObject
@@ -52286,15 +52305,22 @@ MonoBehaviour:
         - key
         - sendEvent
         - storeResult
-        paramDataPos: 0000000000000000000000000d0000000f0000001400000019000000190000001d00000025000000
-        paramByteDataSize: 00000000000000000d00000002000000050000000500000000000000040000000800000002000000
+        - key
+        - storeResult
+        - everyFrame
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000000000000000000000d0000000f0000001400000019000000190000001d00000025000000270000002b00000033000000340000003c0000004500000045000000
+        paramByteDataSize: 00000000000000000d0000000200000005000000050000000000000004000000080000000200000004000000080000000100000008000000090000000000000001000000
     - name: Move Backward
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 64
-        y: 176
+        y: 192
         width: 125
         height: 32
       isBreakpoint: 0
@@ -52327,7 +52353,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 1981448241}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
@@ -52365,6 +52391,213 @@ MonoBehaviour:
         - storeResult
         paramDataPos: 0000000000000000000000000d0000000f0000001400000019000000190000001d00000025000000
         paramByteDataSize: 00000000000000000d00000002000000050000000500000000000000040000000800000002000000
+    - name: Sprinting
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 269
+        y: 235
+        width: 100
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Detect Key
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Walking
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Move Forward
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Exhaust
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Move Forward
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.GetKeyUp
+        - HutongGames.PlayMaker.Actions.GetKeyUp
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0100000000
+        actionStartIndex: 00000000070000000a0000000d00000011000000
+        actionHashCodes: b509599a437581ed437581ed22e8952253489ed1
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1497301555}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000100000000a040000000803f007700000046494e495348454400013001000057616c6b696e67000100000040015374616d696e61000080bf00010100000040015374616d696e6100000000000000000000457868617573744578686175737401
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000130000001c000000110000000f0000000f000000170000000700000017000000110000000700000017000000110000000f0000000f00000001000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - key
+        - sendEvent
+        - storeResult
+        - key
+        - sendEvent
+        - storeResult
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 0000000000000000000000000d0000000f0000001400000019000000190000001d00000025000000270000002b00000032000000340000004000000045000000460000004700000053000000580000005d000000640000006b0000006b000000
+        paramByteDataSize: 00000000000000000d000000020000000500000005000000000000000400000008000000020000000400000007000000020000000c0000000500000001000000010000000c000000050000000500000007000000070000000000000001000000
+    - name: Stamina Check
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 256
+        y: 176
+        width: 118
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Detect Key
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Sprinting
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Sprinting
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.GetKeyUp
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000e000000
+        actionHashCodes: 53489ed1b509599a437581ed
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1497301555}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000040015374616d696e6100000000000000000000537072696e74696e670000000000000000000000000001000000004040000000803f007700000046494e49534845440001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000000f0000000f0000001700000017000000170000000100000014000000130000001c000000110000000f0000000f00000017000000070000001700000011000000
+        paramName:
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 000000000c000000110000001600000016000000160000001f0000000000000000000000200000002d0000002f0000003400000039000000390000003d00000045000000
+        paramByteDataSize: 0c00000005000000050000000000000000000000090000000100000000000000000000000d00000002000000050000000500000000000000040000000800000002000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -52372,12 +52605,27 @@ MonoBehaviour:
     - name: Backward
       isSystemEvent: 0
       isGlobal: 0
+    - name: Exhaust
+      isSystemEvent: 0
+      isGlobal: 0
     - name: Forward
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Sprinting
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Walking
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: Stamina
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 2
       intVariables: []
       boolVariables:
       - useVariable: 1
@@ -52388,6 +52636,12 @@ MonoBehaviour:
         value: 0
       - useVariable: 1
         name: Forward
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Sprint
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -53892,6 +54146,220 @@ MonoBehaviour:
     globalTransitions: []
     variables:
       floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!114 &1987340922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987340908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Stamina Limiter
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmFloat
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 3373b91f53489ed1
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Tank Control - Forward and Backward
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Stamina
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000000015374616d696e610100000000015374616d696e610000004000000000000046494e495348454401
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000c0000000d000000190000001e0000002300000023000000230000002b000000
+        paramByteDataSize: 0000000000000000000000000c000000010000000c000000050000000500000000000000000000000800000001000000
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 83
+        y: 174
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 1
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFsmFloat
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3373b91f
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Tank Control - Forward and Backward
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Stamina
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000400000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f00000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000005000000
+        paramByteDataSize: 0000000000000000000000000500000001000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Stamina
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables: []
