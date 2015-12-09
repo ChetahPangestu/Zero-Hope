@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 497398}
   - 212: {fileID: 21203960}
-  - 136: {fileID: 13690022}
   - 65: {fileID: 6536928}
   m_Layer: 0
   m_Name: Shrub
@@ -24,9 +23,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183764}
-  m_LocalRotation: {x: .641603529, y: -.297228903, z: .297228873, w: .64160341}
-  m_LocalPosition: {x: 3.22000003, y: 0, z: -3.25}
-  m_LocalScale: {x: 1.48910511, y: 1.48910546, z: 1.48910534}
+  m_LocalRotation: {x: .641312957, y: -.297855318, z: .297855288, w: .641312838}
+  m_LocalPosition: {x: 20.4000015, y: .0399999991, z: -4.88999939}
+  m_LocalScale: {x: 1.48910499, y: 1.48910558, z: 1.48910534}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,21 +39,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .409999996, y: .419999987, z: 2.20396495}
-  m_Center: {x: .0199999996, y: 0, z: -4.65661287e-10}
---- !u!136 &13690022
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183764}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: .430000007
-  m_Height: 2.80999994
-  m_Direction: 2
-  m_Center: {x: -2.98023224e-08, y: 0, z: 0}
+  m_Size: {x: .409999996, y: .419999987, z: 3}
+  m_Center: {x: .0199999996, y: 0, z: -1}
 --- !u!212 &21203960
 SpriteRenderer:
   m_ObjectHideFlags: 1
