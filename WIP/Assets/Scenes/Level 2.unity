@@ -18927,6 +18927,66 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 444632, guid: 6297c157889174a469e6bd2c6a94516d, type: 2}
   m_PrefabInternal: {fileID: 629802064}
+--- !u!1 &632493522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 632493523}
+  - 108: {fileID: 632493524}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632493523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632493522}
+  m_LocalRotation: {x: -.49999994, y: .5, z: -.500000119, w: .499999911}
+  m_LocalPosition: {x: -.360000014, y: .0700000003, z: -.949999988}
+  m_LocalScale: {x: 1.66666663, y: 1, z: 1.66666663}
+  m_Children: []
+  m_Father: {fileID: 1266907349}
+  m_RootOrder: 0
+--- !u!108 &632493524
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632493522}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 5.40199471
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &639510246
 GameObject:
   m_ObjectHideFlags: 0
@@ -34646,7 +34706,8 @@ Transform:
   m_LocalRotation: {x: -.500000238, y: -.499999881, z: .499999911, w: -.500000119}
   m_LocalPosition: {x: -32.8929596, y: .0271715019, z: -8.35529613}
   m_LocalScale: {x: .326057971, y: .326058209, z: .543429911}
-  m_Children: []
+  m_Children:
+  - {fileID: 632493523}
   m_Father: {fileID: 1814037895}
   m_RootOrder: 225
 --- !u!65 &1266907350
