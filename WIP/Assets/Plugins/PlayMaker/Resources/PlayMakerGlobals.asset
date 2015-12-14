@@ -58,6 +58,12 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: '[Datapad10] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: '[Datapad1] Obtained'
       tooltip: 
       showInInspector: 0
@@ -95,6 +101,18 @@ MonoBehaviour:
       value: 0
     - useVariable: 1
       name: '[Datapad7] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: '[Datapad8] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: '[Datapad9] Obtained'
       tooltip: 
       showInInspector: 0
       networkSync: 0
