@@ -130,6 +130,12 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: '[Key3] Keycard VIP Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: '[Supplies] Battery'
       tooltip: 
       showInInspector: 0
@@ -178,3 +184,4 @@ MonoBehaviour:
   events:
   - Flashlight Toggled
   - Lobby 1 Door Open
+  - YAHAA
