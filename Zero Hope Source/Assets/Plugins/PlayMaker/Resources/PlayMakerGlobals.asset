@@ -58,6 +58,12 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: '[Datapad10] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: '[Datapad1] Obtained'
       tooltip: 
       showInInspector: 0
@@ -100,6 +106,18 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: '[Datapad8] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: '[Datapad9] Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: '[Key1] Flashlight Obtained'
       tooltip: 
       showInInspector: 0
@@ -107,6 +125,12 @@ MonoBehaviour:
       value: 0
     - useVariable: 1
       name: '[Key2] Keycard Obtained'
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: '[Key3] Keycard VIP Obtained'
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -160,3 +184,4 @@ MonoBehaviour:
   events:
   - Flashlight Toggled
   - Lobby 1 Door Open
+  - YAHAA
