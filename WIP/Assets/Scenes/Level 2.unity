@@ -51658,7 +51658,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1372439209}
-  m_LocalRotation: {x: .000644557644, y: -.70790875, z: .706303, w: .00101811939}
+  m_LocalRotation: {x: .000644557585, y: -.70790869, z: .706302941, w: .00101811928}
   m_LocalPosition: {x: -4.65088606, y: .130423203, z: -8.04553223}
   m_LocalScale: {x: .543430328, y: .543429971, z: .543429971}
   m_Children: []
@@ -69004,7 +69004,7 @@ MonoBehaviour:
           typeName: UnityEngine.AudioClip
           value: {fileID: 8300000, guid: 0af4d507320ca994bb1f801caffd8a59, type: 3}
         fsmVarParams: []
-        byteData: 0000000000000000000000000000010000803f000000000000000000000000000000000000000000000000000000
+        byteData: 0000000000000000000000000000010000803f000000000000000000000000000001000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
